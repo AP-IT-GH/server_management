@@ -84,7 +84,9 @@ kunnen we downloaden met deze
 
 ![Win32 Disk Imager](images/win32_disk_imager.png)
 
-Eens de Win32 Disk Imager is geinstalleerd, kan je het programma gebruiken om de Pi image te kopieren naar de SD kaart.
+Eens de Win32 Disk Imager is geinstalleerd, kan je het programma gebruiken om
+de Pi image te kopieren naar de SD kaart.
+
 1. Open Win32 Disk Imager 
 2. Selecteer de image door op het folder icoon te drukken.
 3. Selecteer het device, dit is drive letter voor de SD kaart.
