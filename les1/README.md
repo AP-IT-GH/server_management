@@ -1,100 +1,119 @@
-# Raspberry Pi: Getting Started
-## Wat is de Rasberry Pi
+# Server Management Intro
+[Client/Server](images/client_server.png)
 
-De Raspberry Pi is een singleboard computer gebaseerd op een ARM chipset. Een
-singleboard computer bestaat uit maar een printplaat. Een singleboard computer
-zorgt er voor dat alle hardware compatible is. De rasperberry pi heeft
-standaard geen omkasting, in combinatie met GPIO pinnen maakt dit een zeer
-interessant soft -en hardware hacking platform. Als OS gebruikt de Pi een linux
-variant gebaseerd op Debian. Omdat de we gebruik maken van een linux OS, kunnen
-we gebruik maken van een groot deel van de beschikbare linux software indien
-deze gecompileerd is voor een ARM architectuur. We kunnen ook onze eigen 
-software schrijven voor de Pi, de meeste gebruikte talen zijn C++ en python.  
-De Pi 2B ondersteunt ook Windows 10 IoT core. 
+Een server is een computer programma met aangepaste hardware waarop een
+programma loopt, dat wacht voor request. Deze request komt van andere software
+via een computer netwerk (deze kan zowel een client of een server zijn.) voor
+het verlenen van specifieke services. Een server kan verschillende relaties
+hebben met andere clients of servers. Dit kan zijn:
 
-De Pi is een single board computer maar om het systeem werkend te krijgen 
-hebben we nog enkele pheriperals nodig. Voor de Raspberry Pi 2B is dit:
-* Voeding (5V @ 2A is aanbevolen)
-* Micro SD
-* Muis 
-* Toetsenbord
-* Scherm
+* one-to-one
+* one-to-many
+* many-to-one
+* many-to-many
 
-De Micro SD en voeding zijn altijd nodig. Eens de initiële configuratie is
-gedaan kunnen we de Pi configuren over een remote connectie met SSH of een 
-andere remote configuratie tool. De Pi beschikt alleen over een ethernet 
-connectie voor internet acces. Dit is wel uitbreidbaar met een WiFi dongle.
+## Operating Systems
 
-De Raspberry Pi is dus een kleine computer waaruit we veel mee kunnen leren en
-coole projecten mee kunnen realiseren. De Pi wordt vaak gebruikt voor server in
-een huiselijke situatie op te zetten.
+### Windows Server
+Windows Server is de verzamelnaam voor het server operating systemen van
+Windows. De huidige versie is Windows Server 2012 R2 met Windows Server 2016 op
+komst. Windows Server wordt vooral gebruikt om verschillende eindgebruikers te 
+managen. Meeste eindgebruikers maken gebruik van een Windows systeem. Om deze 
+te beheren en eenvoudig te integreren in het IT verhaal van een bedrijf, is een
+Windows Server de oplossing. 
 
-Wil je al aan de slag gaan en zoek je een leuk projectje of inspiratie opdoen,
-klik dan op deze [link](https://hackaday.io/search?term=Raspberry+PI).
+Vaak gebruikte tools hiervoor zijn:
+* Active Domain Controller
+* Group Policy
 
+Windows Server voorziet ook vaak voorkomende server applicaties zoals:
+* FTP
+* DNS
+* File server
+* Web server
+* Database server
 
-### ARM Single Board Computer Vergelijking
-Er zijn al enkele versie van de Raspberry Pi op de markt. De Pi is niet de
-enigste ARM Single Board Computer op de markt, 2 bekende alternativen zijn de
-Banana Pi en de Beagle Bone. Hieronder staat een vergelijkende tabel met hun
-hardware eigenschappen.
+Het is ook vanzelf sprekend om een windows server te gebruiken als je custom
+applicaties maakt, die gebasseerd zijn op Windows technologiën, zoals een
+ASP.NET website.
 
-Nog een interessante ARM board is de [PINE64](http://pine64.com/). Dit board
-heeft juist een succesvolle kickstarter achter de rug en zal een geducthte
-concurrent zijn voor de Pi. 
+Je kan een versie van Windows Server 2012 R2 download via [Dreamspark AP](dreamspark.ap.be).
 
-|Single Board Computer   |Processor                |RAM   |Geheugen  |Video            |Audio                       |Aanbevolen voeding |
-|---                     |---                      |---   |---       |---              |---                         |---                |
-|Beagle Bone Black       |1 GHz ARM A8             |512MB |4GB       |Micro HDMI       |Via HDMI                    |500mA @ 5V         |
-|Banana Pi               |1 GHz ARM A7 Dual Core   |1GB   |SD + SATA |HDMI + Composiet |Via HDMI + 3,5mm audio jack |1A @ 5V            |
-|Raspberry Pi A          |700 MHz ARM11            |256MB |SD        |HDMI + Composiet |Via HDMI + 3,5mm audio jack |1A @ 5V            |
-|Raspberry Pi A+         |700 MHz ARM11            |256MB |SD        |HDMI + Composiet |Via HDMI + 3,5mm audio jack |1A @ 5V            |
-|Raspberry Pi B          |700 MHz ARM11            |512MB |Micro SD  |HDMI + Composiet |Via HDMI + 3,5mm audio jack |2A @ 5V            |
-|Raspberry Pi B+         |700 MHz ARM11            |512MB |Micro SD  |HDMI + Composiet |Via HDMI + 3,5mm audio jack |2A @ 5V            |
-|Raspberry Pi 2B         |900 MHz ARM A7 Quad Core |512MB |Micro SD  |HDMI + Composiet |Via HDMI + 3,5mm audio jack |2A @ 5V            |
-|Raspberry Pi Zero       |1GHz ARM11               |1GB   |Micro SD  |Micro HDMI       |Via HDMI                    |700mA @ 5V         |
+### Linux 
+Je kan op de meeste linux gebaseerde systemen eenvoudige server applicaties
+draaien. Door gebruik te maken van de beschikbare software repositories en
+configuratie d.m.v. tekst bestanden, kan je binnen enkele momenten een server
+applicatie draaiende hebben. De voordelen van een linux server is de simpele
+configuratie, het is ook goedkoper omdat er geen licentiekosten is (De kost voor
+het gebruik van het operating systeem en eventuele software) en de hardware
+vereisten voor een linux server zijn ook minder dan voor een Windows Server,
+hierdoor wordt de kost ook gedrukt. Vanwege linux text based configuratie is
+het ook eenvoudiger om een server deployments te automatiseren. Hierdoor heeft
+linux server een streepje voor met cloud oplossingen. Een linux OS kan ook 
+headless draaien. Dit wil zeggen dat er geen keyboard of muis is aangesloten
+en dat er geen GUI draait op het systeem.
 
-## Operating System
+Buiten een Active Domain Controlleren Group Policy en andere Windows Server
+technologiën kan ook een linux systeem meeste server applicaties draaien.
 
-Er zijn verschillende linux varianten beschikbaar voor de Rasperberry Pi. De
-versie die we tijdens het labo gebruiken is Rasbian Jessie Lite.
-Deze is te download op de officiële site van Raspberry Pi.
+> **WhatsApp Servers**
+>
+> WhatsApp servers draaien op FreeBSD box, die per client meer als 1 miljoen
+> verbinding simultaan behandeld 
+>
+> [Bron: WhatsApp blog](http://blog.whatsapp.com/196/1-million-is-so-2011)
 
-Er zijn nog andere linux distro beschikbaar voor. Deze zijn:
-* Arch Linux
-* Kali Linux
-* OpenELEC
-* Fedora 
-* Ubuntu MATE
-* ...
+## Hardware 
+Alle hardware kan een server draaien, maar is meestal niet erg geschikt dus is
+er specifieke hardware voorzien. Je kan met je laptop een server draaien, je
+laptop is mobiel dus is niet altijd voorzien van stroom of van een internet
+verbinding. Dit zorgt voor een gereduceerde downtime. 
 
-> In de labos zal alles uitgelegd worden met Raspbian. Je mag op
-> eigen verantwoordelijkheid ook een eigen distributie kiezen.
+Voor een server thuis heb je genoeg aan een Raspberry Pi (rpi). Een rpi is een
+kleine singleboard computer waarop je een volwaardig os kan draaien. De rpi
+heeft wel geen harde schijf, je kan er wel een externe harde schijf aan
+koppelen. Voor enkele euros kan je dan al een server thuis hebben. Deze wordt
+dan vaak gebruikt als file server en/of torrentbox. Veel meer kan dit bordje
+ook niet aan. Als een upgrade wilt, kan je ook een oude pc hergebruiken, of een
+nieuw systeem aankopen. Op [hardware.info](http://be.hardware.info/pcadvies)
+kan je guides vinden voor het aankopen voor server hardware.  
 
-### OS Installeren.
-De Pi heeft geen ingebouwd geheugen, het gebruikt een Micro SD kaart voor data
-opslag. Willen we het OS flashen op de SD kaart dan gebruiken we op Windows het
-Win32 Disk Imager programma en op Linux maken we gebruik van het dd commando.
+Professionele server hardware verschilt ook met desktop hardware. Server
+hardware is meestal hot swappable. Dit wil zeggen dat bepaalde hardware
+componenten kunnen veranderd worden terwijl de server up and running is.
 
-## Win32 Disk Imager
-Win32 Disk Imager is een tool waarmee we een image kopieren naar een fysieke
-schijf. Met Win32 maken we een kloon van een fysieke schijf. Win32 Disk Imager
-kunnen we downloaden met deze
-[link](http://sourceforge.net/projects/win32diskimager/).
+Professionele hardware is terug te vinden in de volgende vorm factors tegenkomen:
 
-![Win32 Disk Imager](images/win32_disk_imager.png)
+[Server Rack](images/server_rack.jpg)
 
-Eens de Win32 Disk Imager is geinstalleerd, kan je het programma gebruiken om
-de Pi image te kopieren naar de SD kaart.
+* Rack Servers
+* Tower Servers
+* Mini Rack Servers
+* Blade Servers
 
-1. Open Win32 Disk Imager 
-2. Selecteer de image door op het folder icoon te drukken.
-3. Selecteer het device, dit is drive letter voor de SD kaart.
-4. Press Write
+## Server Applications
+Er zijn verschillende server types met nog meer mogelijkheden aan applicaties, vaak voorkomende server types en applicaties zijn:
+* File Server
+  * nfs
+  * samba
+* Applications Server
+  * node.js
+  * php
+* Web Server
+  * Apache
+  * Nginx
+  * Flaks
+* Database Servers
+  * MSSQL
+  * MongoDB
+* Proxy Server
+  * Squid
+* Sound Server
+  * mpd
+* Streaming Server
+  * Plex
+  * Kodi
+* Print Server
+  * CUPS
 
-## Possible Topics
-* Broadcom SoC
-* Shared USB Bus
-* ARM vs x64 vs i386 
-
-
+ 
