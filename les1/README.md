@@ -1,5 +1,5 @@
 # Server Management Intro
-[Client/Server](images/client_server.png)
+![Client/Server](images/server_client.png)
 
 Een server is een computer programma met aangepaste hardware waarop een
 programma loopt, dat wacht voor request. Deze request komt van andere software
@@ -84,7 +84,7 @@ componenten kunnen veranderd worden terwijl de server up and running is.
 
 Professionele hardware is terug te vinden in de volgende vorm factors tegenkomen:
 
-[Server Rack](images/server_rack.jpg)
+![Server Rack](images/server_rack.jpg)
 
 * Rack Servers
 * Tower Servers
