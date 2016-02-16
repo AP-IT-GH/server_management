@@ -34,7 +34,7 @@ Windows Server voorziet ook vaak voorkomende server applicaties zoals:
 * Database server
 
 Het is ook vanzelf sprekend om een windows server te gebruiken als je custom
-applicaties maakt, die gebasseerd zijn op Windows technologiën, zoals een
+applicaties maakt, die gebaseerd zijn op Windows technologieën, zoals een
 ASP.NET website.
 
 Je kan een versie van Windows Server 2012 R2 download via [Dreamspark AP](dreamspark.ap.be).
@@ -53,8 +53,8 @@ linux server een streepje voor met cloud oplossingen. Een linux OS kan ook
 headless draaien. Dit wil zeggen dat er geen keyboard of muis is aangesloten
 en dat er geen GUI draait op het systeem.
 
-Buiten een Active Domain Controlleren Group Policy en andere Windows Server
-technologiën kan ook een linux systeem meeste server applicaties draaien.
+Buiten een Active Domain Controller en Group Policy en andere Windows Server
+technologieën kan ook een linux systeem meeste server applicaties draaien.
 
 > **WhatsApp Servers**
 >
@@ -70,9 +70,9 @@ laptop is mobiel dus is niet altijd voorzien van stroom of van een internet
 verbinding. Dit zorgt voor een gereduceerde downtime. 
 
 Voor een server thuis heb je genoeg aan een Raspberry Pi (rpi). Een rpi is een
-kleine singleboard computer waarop je een volwaardig os kan draaien. De rpi
+kleine single board computer waarop je een volwaardig os kan draaien. De rpi
 heeft wel geen harde schijf, je kan er wel een externe harde schijf aan
-koppelen. Voor enkele euros kan je dan al een server thuis hebben. Deze wordt
+koppelen. Voor enkele euro's kan je dan al een server thuis hebben. Deze wordt
 dan vaak gebruikt als file server en/of torrentbox. Veel meer kan dit bordje
 ook niet aan. Als een upgrade wilt, kan je ook een oude pc hergebruiken, of een
 nieuw systeem aankopen. Op [hardware.info](http://be.hardware.info/pcadvies)
