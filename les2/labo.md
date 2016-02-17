@@ -17,3 +17,7 @@
     * Geef de aangepaste lijnen van de SSH configuratie file.
     * Wat is de locatie van de banner file
     * Geef nog 3 mogelijke SSH hardening opties
+
+> * Geen screenshots
+> * Uploaden als een enkele pdf (Ik verbeter geen docx of andere bestanden.)
+
