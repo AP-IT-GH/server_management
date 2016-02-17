@@ -11,6 +11,7 @@
     * Het maximum aantal authenticatie pogingen is 3.
     * Alleen users van de group admin mogen aanloggen.
     * Voeg een banner toe voor het inloggen in het systeem
+
 ## Verslag
     * Bewijs dat de de SSH daemon opstart bij het booten.
     * Log in met een developer user, toon aan deze login word geweigerd.
