@@ -1,5 +1,8 @@
 # User and Groups Configuration
 
+* De groupen zijn secondary groupen voor de users.
+* Maak een home directory aan voor alle users.²
+
 | #     | sysadmins | developer     | testers   | www   |
 | ---   | ---       | ---           | ---       | ---   |
 | 1     | jezelf    | donatello     | kenny     | -     |
