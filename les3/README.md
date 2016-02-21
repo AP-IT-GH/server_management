@@ -25,6 +25,9 @@ Installeer vsftp op je ubuntu server.
 
 De configuratie file voor vsftpd is te vinden in de /etc/ folder.
 
+> Verander volgende regel al zeker:             
+> pam_service_name=vsftpd --> pam_service_name=ftp`
+
 
 ### FTP Client
 
