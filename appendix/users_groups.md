@@ -1,7 +1,8 @@
 # User and Groups Configuration
 
 * De groupen zijn secondary groupen voor de users.
-* Maak een home directory aan voor alle users.²
+* Maak een home directory aan voor alle users.
+* Defineer een login shell voor de user.
 
 | #     | sysadmins | developer     | testers   | www   |
 | ---   | ---       | ---           | ---       | ---   |
