@@ -5,7 +5,8 @@
 * Installeer vsftp  op je server
 * Installeer FileZilla in je Windows Omgeving
 * Snif met Wireshark naar een paswoord van ftp user
-* Maak de directory `/var/www` aan, geef leesrechten aan de www groep.
+* Maak de directory `/var/www` aan, geef lees en schrijfrechten aan de www
+  groep.
 * Voeg de helft van de developers toe aan de www groep (Eerste twee.)
 * Voer elke `www` user volgende commando uit:  
   `sudo mount --bind /var/www /home/www_user/www`
