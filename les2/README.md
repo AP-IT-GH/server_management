@@ -1,5 +1,7 @@
 # Remote Management
 
+**Voor je aan dit labo begint lees de documenten in de appdix folder**
+
 ## SSH
 
 Je kan een machine op afstand configuren over Secure Shell protocol. Secure
