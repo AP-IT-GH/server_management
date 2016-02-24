@@ -19,9 +19,10 @@ starten van een service bij het booten van het systeem. reload voor herstarten
 van een service. Status geeft de huidige staat weer van de service.
 
 ## journalctl
+
 journalctl is het logging systeem van systemd en vervangt de syslog daemon. Enkele nuttige commando's voor journalctl zijn.
 
-journalctl -e      # end
-journalctl -f      # follow
-journalctl -b      # this boot
-journalctl -u sshd # unit
+* journalctl -e      # end
+* journalctl -f      # follow
+* journalctl -b      # this boot
+* journalctl -u sshd # unit
