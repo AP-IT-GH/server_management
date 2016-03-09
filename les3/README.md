@@ -74,7 +74,22 @@ Dit is heeft als voordeel dat we een soort sandbox creëren. Hierdoor is het
 eenvoudiger om een applicatie te testen zonder dat het onderliggende systeem
 wordt blootgesteld. 
 
+## Update 
 
+Het uitgaand FTP verkeerd van Windows naar een VM in VBox wordt niet opgevangen door Wireshark. Een workaround hiervoor is:
+
+* installeer  wireshark op server
+* ssh vanuit het host system naar de server dmv mobaxterm of ssh -X
+* voer vanuit het ssh connectie volgende commando uit sudo wireshark
+* er is nu een wireshark venster op in de host omgeving
+* sniff op de juiste interface naar het FTP paswoord.
+
+Voor het pwd en ls commando, kan je een ftp sessie starten vanuit:
+
+* powershell
+* bash
+
+Gebruik hiervoor het commando ftp xxx.xxx.xxx.xxx, een succesvol ingelogd kan je de commandos uitvoeren.
 
 
 
