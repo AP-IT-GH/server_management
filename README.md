@@ -5,4 +5,5 @@
 ## [Les 4: Web Server](les4/)
 ## [Les 5: File Servers](les5/)
 ## [Les 6: DNS](les6/)
+## [Les 7: DHCP](les7/)
 
