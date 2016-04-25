@@ -54,7 +54,7 @@ De configuratie file kunnen we in 3 grote delen opdelen:
 ### Global options Options
 
 |Optie Naam         |Beschrijving               |
-|--                 |--                         |
+|---                |---                        |
 |default-lease-time |De lease time die wordt meegegeven vanuit de DHCP server, dit is de tijd dat het adres voor een specifieke client gereserveerd blijft. |    
 |max-lease-time     |De lease time kan door de client worden overschreven t/m de max-lease-time                                                             |
 |subnet-mask        |De subnet-mask van een subnet dat wordt meegegeven aan de client                                                                       |

@@ -55,7 +55,7 @@ omgeving kan bind9 voor 2 doeleinden worden ingesteld.
 De configuratie files voor *bind9* staan in `/etc/bind` 
 
 | File                                  | Doel                                  |
-| --                                    | --                                    |
+| ---                                   | ---                                   |
 | /etc/bind/named.conf                  | Hoofd configuratie file wijst naar die file die mee worden ingeladen bij het opstarten van bind9                                      |
 | /etc/bind/named.conf.options          | Zet de algemene bind opties                                      |
 | /etc/bind/named.conf.default-zones    | Hierin staat de verwijzing naar de DNS zones die bij elke installatie van bind9 mee worden geinstalleerd.
@@ -96,7 +96,7 @@ De lookup file moet minimaal 3 zone entries bevatten, deze 3 hebben allemaal
 een verschillende record type. Een DNS zone entry heeft de volgende opbouw.
 
 |name   |ttl    |record class   |record type    |record data    |
-|--     |--     |--             |--             |--             |
+|---    |---    |---            |---            |---            |
 
 De 3 nodige record types zijn:
 1.  SOA  
