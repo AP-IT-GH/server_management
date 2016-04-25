@@ -9,6 +9,7 @@
 * Hostfile
 * De 2 zone files
 * named.conf.local file
+* named.conf.options file
 * Het antwoord op volgende vragen? Heeft windows een hostfile? Zo ja, waar
   staat deze?
 * Leg in 10 regels uit wat DNS hijacking is.
