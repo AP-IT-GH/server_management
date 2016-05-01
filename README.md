@@ -6,4 +6,5 @@
 ## [Les 5: File Servers](les5/)
 ## [Les 6: DNS](les6/)
 ## [Les 7: DHCP](les7/)
+## [Les 8: Integratie](les8/)
 
