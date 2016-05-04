@@ -70,7 +70,7 @@ worden bv:
 * Google Public DNS
 
 Dit is een optie, de forwarders zijn daardoor gedefineerd in
-`/etc/bind/named.conf.local`
+`/etc/bind/named.conf.options`
 
 *forward optie configuratie*
 ```
