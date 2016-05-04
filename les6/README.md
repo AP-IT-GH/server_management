@@ -165,7 +165,7 @@ zone "servermanagement" {
 [..]
 ```
 
-Als dit gebeurd, kan de DNS server opnieuw worden opgestart en is de DNS zone
+Als dit gebeurd, kan de DNS server opnieuw worden opgestart en is de DNS zone 
 geconfigureerd.
 
 
@@ -174,10 +174,17 @@ Het IP van de DNS server kan op 2 verschillende manieren worden gedistrueerd.
 1. Door een DHCP server
 2. Door een handmatige instelling.
 
-Voor een handmatige instelling op linux plaatsen we er volgende de interface
-configuratie de volgende lijn er bij. 
+Voor een handmatige instelling op linux plaatsen we er volgende lijn in de
+interfaces file er bij.  configuratie de volgende lijn er bij. 
 
-`dns-nameserver xxx.xxx.xxx.xxx`
+Dit geeft de volgende configuratie voor een interface.
+```
+auto iface_name
+iface iface_name inet static
+    address zzz.zzz.zzz.zzz
+    netmask yyy.yyy.yyy.yyy
+    dns-nameserver xxx.xxx.xxx.xxx
+```
 ## Links 
 * https://help.ubuntu.com/community/BIND9ServerHowto
 * https://linuxconfig.org/linux-dns-server-bind-configuration
