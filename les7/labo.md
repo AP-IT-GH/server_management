@@ -65,4 +65,4 @@ In dit gedeeltde worden de virtuele machines beschrijven afhankelijk van hun net
 ## Verslag 
 
 * dhcpd.conf file
-* output van tracepath naar een random adres (buiten de range van de DHCP leases) vanuit de dynamische DHCP client.
+* output van `ip route get 8.8.8.8` .
