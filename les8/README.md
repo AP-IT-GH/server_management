@@ -84,7 +84,7 @@ Heel dit geeft volgend netwerk diagram:
 Voor een cijfer te krijgen voor dit labo moeten de bovenstaande commando's
 worden uitgevoerd in het bijzijn van de lector.
 
-Er moet maar 1 verslag worden geupload worden per groep. Naam en leden duidelijk vermelden.
+Er moet maar 1 verslag worden geuploaden per groep. Naam en leden duidelijk vermelden.
 
 
 * Aangepast netwerk diagram met IP en netwerk kaart configuratie van de
